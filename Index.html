@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Service - MediaMarkt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script> 
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Business Case - Media Service</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#estado">Estado Atual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#melhorias">Melhorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mudanca">Gestão da Mudança</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipa">Desenvolvimento da Equipa</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 data-aos="fade-up"></h1>
+            <p data-aos="fade-up" data-aos-delay="200"></p>
+            
+            <!-- Logo da MediaMarkt -->
+            <div class="mediamarkt-logo" data-aos="fade-up" data-aos-delay="300">
+                <img src="logo-mediamarkt.png" alt="MediaMarkt Logo">
+            </div>
+
+            <!-- Botão Explorar -->
+            <a href="https://www.linkedin.com/in/renato-lobo-1ab016144/" class="btn btn-gradient mt-3" data-aos="fade-up" data-aos-delay="400">Renato Lobo</a>
+        </div>
+    </header>
+
+    <!-- Seções de Conteúdo (Apenas uma visível de cada vez) -->
+    <div class="container my-5">
+        <div id="estado" class="content-section active">
+            <h2 class="text-center mb-4" data-aos="fade-right">📌 Estado Atual</h2>
+			<p>O Media Service realiza reparações de hardware, software e substituição de componentes</p>
+			
+			<div class="tab-container">
+			<div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'garantia')">Reparações Fora da Garantia</button>
+            <button class="tab-button" onclick="openTab(event, 'express')">Reparações Express e Pequenas Reparações</button>
+            <button class="tab-button" onclick="openTab(event, 'personalizado')">Serviços Especializados e Personalizados</button>
+        </div>
+		
+		<div id="garantia" class="tab-content active">
+            <h3>Reparações Fora da Garantia</h3>
+            <ul>
+                <li>Diagnóstico e orçamentação</li>
+                <li>Troca de peças (ecrãs, baterias, discos rígidos, etc.)</li>
+            </ul>
+        </div>
+
+        <div id="express" class="tab-content">
+            <h3>Reparações Express e Pequenas Reparações</h3>
+            <ul>
+                <li>Limpeza interna de computadores e consolas</li>
+                <li>Atualização de software e recuperação de sistemas operativos.</li>
+				<li>Serviços de manutenção preventiva para prolongar a vida útil dos equipamentos.</li>
+            </ul>
+        </div>
+
+        <div id="personalizado" class="tab-content">
+            <h3>Serviços Especializados e Personalizados</h3>
+            <ul>
+                <li>Instalação e configuração de novos dispositivos (smartphones, PCs, etc).</li>
+                <li>Recuperação de dados em discos rígidos ou dispositivos danificados.</li>
+				<li>Colocação de peliculas</li>
+                <li>Retomas</li>
+            </ul>
+        </div>
+    </div>
+        </div>
+ 
+
+        <div id="melhorias" class="content-section">
+            <h2 class="text-center mb-4" data-aos="fade-up">🔧 Melhorias Propostas</h2>
+			<p>Independentemente da qualidade que já existe, há sempre espaço para melhorar.<p>
+			<div class="tab-container">
+			<div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'tempo')">Redução do Tempo de Reparação (Prioridade Alta)</button>
+            <button class="tab-button" onclick="openTab(event, 'atendimento')">Atendimento ao Cliente mais Ágil e Eficiente (Prioridade Alta)</button>
+            <button class="tab-button" onclick="openTab(event, 'aumento')">Aumento da Conversão na Venda de Serviços (Prioridade Média-Alta)</button>
+			<button class="tab-button" onclick="openTab(event, 'otimizar')">Otimizar a Comunicação entre Equipas (Prioridade Média)</button>
+			<button class="tab-button" onclick="openTab(event, 'interna')">Formações internas (Prioridade Média)</button>
+			<button class="tab-button" onclick="openTab(event, 'retencao')">Maior Retenção de Clientes após a reparação (Prioridade Média-Baixa)</button>
+        </div>
+		</div>
+		<div id="tempo" class="tab-content">
+            <h4>1️⃣ Redução do Tempo de Reparação (Prioridade Alta)</h4>
+            <ul>
+                <li><b>Melhoria :</b> Melhorar a eficiência dos processos internos.</li>
+                <li>✅ Ajustar prioridade – Criar um método simples de classificação das reparações, separando as rápidas das mais complexas para evitar acumular demasiadas reparações no Service. Equipamentos parados não trazem valor.</li>
+                <li>✅ Melhorar a comunicação interna – Reduzir o tempo de espera entre diagnóstico, aprovação do orçamento e início da reparação.</li>
+				<li>✅ Analisar o fluxo interno – Garantir que o stock que existe em loja é de equipamentos que saem com mais frequência (analise do histórico de reparações).</li>
+				</br>
+				<p>A redução dos tempos de reparação proporciona ao cliente uma melhor experiência connosco e permite angariar clientes com urgência nas suas reparações.</p>
+              </ul>
+        </div>
+		
+		<div id="atendimento" class="tab-content">
+            <h3>2️⃣ Atendimento mais Eficiente (Prioridade Alta)</h3>
+            <ul>
+                <li><b>Melhoria :</b> Aproveitar as ferramentas já existentes para melhorar a experiência do cliente.</li>
+                <li>✅ Checklists claros – Criar um guia simples para os colaboradores explicarem de forma mais fácil as opções de reparação ao cliente bem como os passos do processo. (Entrada, Diagnóstico, Orçamento, Aceitação, Reparação, Levantamento).</li>
+                <li>✅ Melhorar o acompanhamento dos clientes – Utilizar o canal interno (Websip) para enviar atualizações sobre o estado da reparação. (Diagnóstico concluído, prazo de entrega das peças, chegada das peças, reparação concluída, testes concluídos, pronto para levantamento).</li>
+                <li>✅ Reduzir tempo de espera na entrega – Avisar imediatamente quando a reparação estiver concluída.</li>
+				</br>
+				<p>Estas pequenas alterações dão ao cliente feedback constante, o que evita falta de informação e a necessidade de o cliente contactar a linha a solicitar informações.</p>
+              </ul>
+        </div>
+		
+		<div id="aumento" class="tab-content">
+            <h3>3️⃣ Aumento da Conversão na Venda de Serviços (Prioridade Média-Alta)</h3>
+            <ul>
+                <li><b>Melhoria :</b> Melhorar a argumentação da equipa.</li>
+                <li>✅ Reforçar o discurso de venda – Garantir que os colaboradores sabem explicar os benefícios dos serviços adicionais</li>
+                <li>✅ Abordagem personalizada – Instruir a equipa para recomendar apenas os serviços mais relevantes para cada situação.</li>
+                <li>✅ Disponibilizar informação visual sobre as melhores ofertas no Service.</li>
+				</br>
+				<p> Uma melhoria na venda de serviços, considerando os mais adequados às necessidades do cliente, trazem um benefício para ambas as partes. O cliente tem uma experiência melhorada connosco e nossa faturação aumenta com a correta venda de serviços.
+Além disso esta melhoria torna todos os Services do país uniformes naquilo que é a apresentação dos nossos serviços e o cliente tem a mesma experiência em qualquer um dos nossos espaços.
+ </p>
+              </ul>
+        </div>
+		<div id="otimizar" class="tab-content">
+            <h3>4️⃣ Otimizar a Comunicação entre Equipas (Prioridade Média)</h3>
+            <ul>
+                <li><b>Melhoria :</b> Melhorar a fluidez do processo.</li>
+                <li>✅ Reuniões curtas e objetivas no início do turno para alinhar prioridades e definir a orientação do dia.</li>
+                <li>✅ Utilização mais eficiente dos sistemas existentes (Websip e folha de diagnóstico) para evitar erros e diagnósticos/testes que já foram realizados.</li>
+                <li>✅ Fortalecer relação entre técnicos e vendedores – Esta relação permite garantir boas oportunidades de upselling.</li>
+				</br>
+				<p>Uma reunião curta de 5/10 minutos a cada entrada e saída de colaboradores, passando o serviço, informando o que está em bancada, os equipamentos prioritários poupando assim a leitura extensiva de todas as folhas de diagnóstico e a abertura de todos os processos em Websip</p>
+        </div>
+		<div id="interna" class="tab-content">
+            <h3>5️⃣ Formações internas (Prioridade Média)</h3>
+            <ul>
+                <li><b>Melhoria :</b> Melhorar a qualidade da reparação e o volume de reparações em loja.</li>
+                <li>✅ Existem técnicos excelentes nos nossos quadros e como tal faria sentido tirar o melhor deles, não apenas no diagnóstico e reparação dos equipamentos.</li>
+                <li>✅ Fazer um levantamento dos equipamentos que seguem para o Laboratório Central com mais frequência que, com uma pequena formação poderiam ser feitas em loja.</li>
+                <li>✅ Gravar algumas formações para esse tipo de reparações e disponibilizar as mesmas na Academia.</li>
+				<li>✅ Analisar técnicos com competências acima da média em determinado tipo de reparações, que possam formar novos colegas.</li>
+				</br>
+				<p>Uma formação fora de portas é dispendiosa e como tal não nos é possível chegar a todos e desta forma daríamos formação técnica com alguma frequência sem um custo acrescido.</p>
+        </div>
+		<div id="retencao" class="tab-content">
+            <h3>6️⃣ Maior Retenção de Clientes após a reparação (Prioridade Média-Baixa)</h3>
+            <ul>
+                <li><b>Melhoria :</b> Criar um vínculo com o cliente.</li>
+                <li>✅ Agradecimento e incentivo para voltar – Incluir um cartão ou mensagem na entrega do equipamento. (Com ou sem reparação).</li>
+                <li>✅ Pós-reparação – Fazer um contacto rápido, alguns dias após a reparação.</li>
+                <li>✅ Uma melhor divulgação dos serviços existentes.</li>
+				</br>
+				<p> Da mesma maneira que uma má experiência tem um impacto forte no cliente e na mensagem que ele passa aos outros, uma experiência positiva e um pequeno contacto posterior, demonstrando interesse na visita dele, pode causar um impacto ainda mais positivo e trazer um fluxo maior de clientes à loja através do "passa a palavra”.</p>
+              </ul>
+        </div>
+        </div>
+
+        <div id="solucoes" class="content-section">
+            <h2 class="text-center mb-4" data-aos="fade-up">🚀 Soluções e Novos Serviços</h2>
+			<p>O que podemos trazer de novo a uma área de trabalho em evolução constante e tão dinâmica? O que funciona aplicado ao nosso universo.<p>
+			<div class="tab-container">
+			<div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'seguro')">Criação de um Seguro para reparações de ecrãs</button>
+            <button class="tab-button" onclick="openTab(event, 'pick')">PickUp&Delivery Express</button>
+            <button class="tab-button" onclick="openTab(event, 'b2b')">Desenvolvimento de parcerias B2B locais</button>
+			<button class="tab-button" onclick="openTab(event, 'pacote')">Pacote de manutenção</button>
+			<button class="tab-button" onclick="openTab(event, 'equipas')">Como garantir a preparação da equipa ?</button>
+        </div>
+		</div>
+		
+		<div id="seguro" class="tab-content">
+            <h4>1️⃣ Criação de um Seguro para reparações de ecrãs</h4>
+			<ul>
+				<li><b>Descrição :</b> O cliente, ao realizar a reparação de um ecrã, tem a possibilidade de contratar um seguro de substituição para o futuro, de modo a garantir que, em caso de novo dano, possa fazer a substituição sem custos adicionais, pagando apenas uma franquia.</li>
+				<li><b>Como funcionaria :</b> </li>
+                <li>✅ Existia a contratação de um seguro por um valor com base no custo da troca do ecrã.</li>
+                <li>✅ Em caso de novo dano o cliente teria de pagar apenas a franquia do seguro e teria direito à troca do ecrã sem mais nenhum custo.</li>
+				<li>✅ Os pressupostos da troca seriam iguais aos da primeira troca (Qualidade da peça, prazo de entrega da peça, prazo da reparação).</li>
+				<li>✅ Serviço com validade de 12 meses com possível extensão para mais 12 meses.</li>
+				<li><b>Impacto :</b></li>
+				<p>Acreditando que a taxa de recurso ao serviço seria um pouco mais alta do que o plano de proteção (PP) tradicional (colocando nos 8% vs os 4% da companhia) traria uma rentabilidade interessante ao negócio. Ainda com a melhoria de que seria um serviço mais fácil de vender do que um PP tradicional, pelo facto de o cliente já ter tido um acidente recente.
+Este novo conceito não só traz para o cliente um valor considerável e imediato, como aumenta de forma bastante positiva a faturação da loja.
+O modelo poderia ser gerido internamente ou em parceria com a nossa seguradora atual (SPB), tornando-se ainda mais rentável.
+Ajustar o modelo com um preço competitivo, melhorar o acordo com os parceiros das peças, boas campanhas de marketing e campanhas de adesão ao serviço aumentaria o fluxo de clientes em loja e a fidelização dos mesmos.
+
+				</p>
+              </ul>
+        </div>
+		<div id="pick" class="tab-content">
+            <h4>2️⃣ PickUp&Delivery Express</h4>
+            <ul>
+                <li><b>Descrição :</b> Criar um serviço premium "PickUp&Delivery Express" para reparações urgentes de clientes que não tem possibilidade e/ou disponibilidade para entregar o equipamento em loja.</li>
+				<li><b>Como funcionaria :</b> </li>
+				<li>✅ Cliente faria marcação no site onde já estariam os serviços possíveis de ser realizados.</li>
+				<li>✅ Era cobrado aquando da marcação uma taxa de serviço Express, pela entrega/recolha e pela prioridade na reparação.</li>
+                <li>✅ Num período experimental poderia funcionar apenas como Delivery em loja, usando a plataforma que já usamos da Glovo. Em caso de sucesso incluir depois o PickUp.</li>
+                <li>✅ Não seria aplicável a todos os serviços, sendo mais orientado para dispositivos moveis, portáteis, outros produtos populares de rápido diagnóstico/ reparação e análise da viabilidade de incluir as retomas neste serviço.</li>
+				<li><b>Impacto :</b></li>
+				<p>Aumento das receitas com uma taxa premium paga logo à entrada do equipamento num serviço rápido e com alguma demanda.
+Satisfação e fidelização do cliente e possíveis recomendações a outras pessoas.
+Diminuição do fluxo em loja em alturas mais movimentadas.
+
+				</p>
+              </ul>
+        </div>
+		<div id="b2b" class="tab-content">
+            <h4>3️⃣ Desenvolvimento de parcerias B2B locais</h4>
+            <ul>
+                <li><b>Descrição :</b> Estender os serviços do Service a empresas locais. Várias pequenas/médias empresas usam parceiros externos para reparação de equipamentos, troca de peças entre outros serviços.</li>
+				<li><b>Como funcionaria :</b> </li>
+				<li>✅ Fazer contactos e mostrar os serviços disponibilizados pelo Service.</li>
+                <li>✅ Reforçar a presença do Service junto das pequenas/médias empresas locais.</li>
+                <li>✅ Expandir para o universo B2B criando novas fontes de receita e em última instância funcionar com contrato, trazendo uma fonte de rendimento constante.</li>
+				<li><b>Impacto :</b></li>
+				<p>Desenvolver parcerias a longo prazo e fidelizar uma empresa que em vários casos poderá ser um cliente recorrente (empresas de informática sem suporte técnico interno, por exemplo).
+Maior visibilidade do Service junto do tecido empresarial local.
+				</p>
+				</ul>
+        </div>
+		<div id="pacote" class="tab-content">
+            <h4>4️⃣ Pacote de manutenção</h4>
+            <ul>
+                <li><b>Descrição :</b> Criar um plano de manutenção frequente.  </li>
+				<li><b>Como funcionaria :</b> </li>
+                <li>✅ O pacote teria um pagamento mensal ou bimestral, que daria acesso ao cliente, a vários serviços sem nenhum custo associado. </li>
+                <li>✅ O serviço tem um período de fidelização de 6 meses, podendo este ser cancelado a qualquer momento, após esse período.</li>
+                <li>✅ Os serviços incluídos no pacote são: Atualização, Instalação e Reinstalação do SO, Limpeza interna, Instalação de software e Mão de obra da colocação de peças.</li>
+				<li>✅ Clientes com este pacote têm desconto em serviços não incluídos no mesmo. </li>
+				<li><b>Impacto :</b></li>
+				<p>
+				Com este pacote é criada uma entrada de receita recorrente visto ser um pagamento mensal/bimensal, garantindo que existe um fluxo constante mesmo em dias/semanas/meses com menos serviço. 
+Aumento do valor do cesto médio por cliente ao conseguir fazer upselling de serviços sem grande impacto para o cliente visto que o mesmo tem este plano. Fidelização do cliente. 
+Embora não seja exclusivo, este serviço torna-se bastante aliciante para clientes mais idosos, que aparecem nas nossas lojas com alguma frequência e com problemas "simples" e de rápida resolução.
+</p>
+				</ul>
+        </div>
+		<div id="equipas" class="tab-content">
+            <h4>Como garantir a preparação da equipa ?</h4>
+            <ul><p><b>Treino intensivo</b></p>
+                <li>Sessões de formação online para explicar como funciona cada um dos novos serviços e como vão estes agregar valor para o cliente.</li>
+				<li>Sessões de formação online para melhorar a comunicação com o cliente sobre os novos serviços. Alguns deles são algo complexos e seria necessário adaptar a comunicação para algo mais simples de entender na visão do cliente. </li>
+				<li>Desmultiplicação da formação em loja para quem não esteve presente.</li>
+				<li>Formações disponíveis na Academia.</li>
+              </ul>
+					</br>
+			 <ul ><p><b>Incentivos individuais e definição de objetivos</b></p>
+                <li>Num novo serviço o incentivo individual é sempre a maneira mais rápida de adesão por parte dos colaboradores. Criar um incentivo que aumentaria em função dos objetivos atingidos pelo colaborador.</li>
+				<li>Criação de um challenge interno para promover o lançamento.</li>
+				<li>Acompanhamento dos resultados de cada Service de forma regular, dando feedback e fazendo visitas para acompanhar o lançamento do serviço.</li>
+              </ul>
+			  </br>
+			  <ul><p><b>Partilha de conhecimento e experiências individuais</b></p>
+                <li>Algum tempo após o lançamento, analisar quem são os colaboradores com melhor desempenho, perceber o motivo do desempenho e partilhar com o resto das equipas discursos, estratégias e diálogos.</li>
+				<li>Essa partilha poderia ser feita por um email escrito pelos colaboradores com melhores resultados ou com a gravação de um pequeno vídeo partilhado a todas as equipas. </li>
+              </ul> 
+        </div>
+        </div>
+
+        <div id="formacao" class="content-section">
+            <h2>🎓 Plano de Formação</h2>
+			<p>Objectivos do plano de formação :</p>
+			<p>Garantir que o técnico tem as melhores práticas em relação a reparações, atendimento ao cliente e cultura da Empresa.</p>
+			<p>Verificar a capacidade técnica atual e capacitar o técnico de mais conhecimento.</p>
+			<p>Garantir técnicos multifacetados, dando-lhes uma vertente mais comercial em conjunto com a capacidade técnica deixando no passado o estereótipo de técnico unidirecional.</p>
+			<p>Criar uma mentalidade de melhoria continua fazendo uma avaliação mais constante e dando feedback mais rápido de modo a extrair mais das equipas.</p>
+			<h2>📅 Planeamento da Formação</h2>
+				<p>Insira a data de início da formação para gerar o calendário:</p>
+				<input type="date" id="startDate" class="form-control w-25">
+				<button class="btn btn-gradient mt-3" onclick="generateCalendar()">Gerar Calendário</button>
+
+				<!-- Calendário dinâmico -->
+				<div id="calendar" class="mt-4"></div>
+			
+
+			<!-- Modal para exibir detalhes da formação -->
+			<div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="trainingModalLabel">Detalhes da Formação</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" id="trainingDetails">
+							<!-- O conteúdo da semana será inserido dinamicamente aqui -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div id="mudanca" class="content-section">
+            <h2>🔄 Gestão da Mudança</h2>
+            <p>Num negócio com tanta mudança é normal que as mesmas nem sempre vão de encontro àquilo que é o desejo ou vontade individual de cada um.</p>
+			<p>Especialmente no que diz respeito aos técnicos da área da tecnologia que são tendencialmente mais inclinados para os seus métodos mais consolidados.</p>
+			<p>A minha abordagem assentaria em 4 pontos essenciais:</p>
+			<ul data-aos="fade-up">
+                <li><b>1. Entender a resistência  </b></li>
+					<p>Antes de procurar uma solução para a resistência do técnico é importante entender qual o motivo da mesma de modo a resolver o problema de maneira eficaz. </br>
+					Entender se essa questão vem de falta de confiança própria, falta de confiança no processo ou apenas de não ser a maneira como o técnico quer trabalhar.</br>
+					Uma conversa individual e aberta serviria dois propósitos, identificar as barreiras existentes e ao mesmo tempo demonstrar ao técnico que a opinião dele é ouvida.
+					</p>
+                <li><b>2. Comunicar de forma clara e objetiva  </b></li>
+					<p>É extremamente importante que a conversa seja sempre clara e objetiva para que não fiquem dúvidas em relação a nenhum ponto.
+						</br>Explicaria detalhadamente a proposta de mudança numa conversa franca, mostrando todos os benefícios envolvidos, não só os que vai trazer para a Empresa, bem como os que vai trazer para ele também.
+						</br>Imaginemos que a resistência é em relação à venda de um novo serviço; explicaria que com esse novo serviço iriamos melhorar a faturação, melhorar a experiência do cliente e obviamente no final isso significaria maior incentivo individual.
+					</p>
+				<li><b>3. Exemplos práticos  </b></li>
+					<p>A mudança pode ser algo novo no mercado ou algo já feito por empresas concorrentes. Então dependendo do caso pegaria em exemplos práticos do mercado concorrente para mostrar que funciona de forma positiva.
+						</br>No caso de ser uma mudança nova no mercado pegaria em casos de sucesso internos para mostrar como a mudança funciona.
+						</br>Esperando com esses possíveis exemplos criar um impacto e incentivo positivo no técnico.
+					</p>
+                <li><b>4. Acompanhamento e Suporte </b></li>
+					<p>Tendo em conta que a mudança não é algo que acontece de um dia para o outro, garantia um acompanhamento mais regular, dando suporte para contornar dificuldades que existissem no processo.
+						</br>Caso a resistência ainda se mantenha procuraria novas formas de fomentar a mudança. Uma delas seria colocar o técnico resistente à mudança a fazer um acompanhamento de um colega que tenha tido bastante sucesso com a mesma.
+					</p>
+				<li><b>Extra </b></li>
+					<p>Por vezes existem pessoas resistentes a qualquer mudança, seja ela mais simples ou mais complexa. Vamos conhecendo essas pessoas e adaptando um pouco a maneira de lidar com elas.
+						</br>Existindo alguém com esse perfil, o caminho ideal seria incluir essa pessoa no planeamento da mudança, ela sentiria que fazia parte da mudança e mais facilmente a aceitaria.
+						</br>Além disso estaríamos a aproveitar o conhecimento de loja do técnico para deixar a proposta de mudança mais estruturada.
+					</p>
+            </ul>
+			<p>Empatia, comunicação e foco estratégico são os pilares da minha abordagem ao tema. Seria uma boa forma de criar uma mudança de forma suave e produtiva. </p>
+        </div>
+
+        <div id="equipa" class="content-section">
+            <h2>👥 Desenvolvimento da Equipa</h2>
+            <p>A baixa performance e desmotivação do João e do António podem vir vários fatores, como tal é importante entender o panorama para procurar a melhor solução.</p>
+			<p>Estruturaria a minha abordagem à equipa da Lousã em 4 pontos: </p>
+			<ul data-aos="fade-up">
+                <li><b>1. Entender o motivo </b></li>
+					<p>Tendo em conta que a desmotivação e falta de performance pode vir de vários fatores realizaria conversas individuais e privadas com o João e o António para entender os fatores que causam o problema.
+					</br>Na maioria das vezes essas questões podem vir de falta de reconhecimento, problemas pessoais, desajuste das funções que realizam, falta de clareza nos objetivos e/ou questões financeiras.
+					</p>
+                <li><b>2. Clarificar expectativas e definição de objetivos concreto  </b></li>
+					<p>Após compreender os motivos de cada um, que podem não ser iguais, definiria individualmente e em conjunto com cada um, metas claras, transparentes e ao alcance de cada um, alinhadas sempre com o objetivo do Service.
+						</br>Criaria um plano de ação com pontos de acompanhamento para medir a evolução de cada um.
+					</p>
+				<li><b>3. Formação e motivação</b></li>
+					 <p><b>- Treino e orientação : </b> 
+					 Caso a baixa performance esteja relacionada com questões técnicas ou operacionais, criaria um plano de formação para a equipa. Formações online e/ou presenciais.
+					 </p>
+				
+					<p><b>- Reconhecimento e Feedback : </b> 
+					Valorizar e reconhecer pequenos passos. Esse feedback mesmo que por pequenas melhorias criaria motivação dentro da equipa. Reforço positivo muitas vezes é uma solução fácil para resolver a falta de confiança.
+					</p>
+					
+					<p><b>- Responsabilidades e Autonomia :</b> 
+					Incentivar o envolvimento da equipa dando-lhes pequenas responsabilidades para os desafiar e para que sintam que são uteis na equipa.
+					</p>
+					
+                <li><b>4. Acompanhamento e Ajustes </b></li>
+					<p>Tal como a resistência à mudança não é resolvida instantaneamente, a falta de performance e desmotivação também não. Então o último ponto da minha abordagem seria um acompanhamento continuo, com vários controlos para analisar o ponto em que estamos e verificar a necessidade de alterações ao programado.
+						</br>Caso a baixa performance não ficasse resolvida com estas questões falaria com a equipa/membro da equipa sobre as alternativas que temos, quer seja pela alteração de funções ou outras abordagens para melhorar o comprometimento.
+					</p>
+				
+            </ul>
+			<p>Esta estratégia tem como objetivo transmitir ao João e ao António clareza naquilo que são as suas funções, mostrar-lhes que fazem parte da equipa e que existe na Empresa espaço para crescimento, basta manter o foco e a motivação.</p>
+        </div>
+    
+	</div>
+    <!-- Rodapé -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 Media Service - Renato Lobo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
